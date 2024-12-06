@@ -1,0 +1,23 @@
+{
+	"name": "im-server",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
+		"cf-typegen": "wrangler types --env-interface Env",
+		"format": "biome format --write ."
+	},
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"drizzle-orm": "^0.37.0",
+		"hono": "^4.6.12",
+		"jose": "^5.9.6",
+		"nanoid": "^5.0.9",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@cloudflare/workers-types": "^4.20241202.0",
+		"drizzle-kit": "^0.29.1",
+		"wrangler": "^3.88.0"
+	}
+}
